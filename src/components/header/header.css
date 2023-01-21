@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Syne', sans-serif;
+}
+body{
+  box-sizing: border-box;
+
+}
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+
+}
+ul,ol{
+  list-style:none;
+
+}
+a{
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  -webkit-box-shadow: 2px 12px 88px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 2px 12px 88px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 2px 12px 88px 0px rgba(34, 60, 80, 0.2);
+  background-color: #fff;
+}
+.header{
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+padding-top: 30px;
+padding-bottom: 37px;
+}
+.header_block{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.header_box_img{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header_logo{
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+color: #000000;
+width: 120px;
+}
+.header_item{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  }
+ 

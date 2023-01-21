@@ -1,0 +1,65 @@
+.card_title {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 105.5%;
+  color: #000000;
+  text-align: center;
+}
+.card{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.card_block {
+  display: flex;
+ justify-content: space-between;
+ margin-top: 170px;
+flex-wrap: wrap;
+gap: 50px;
+
+}
+.card_item{
+  max-width: 265px;
+ 
+}
+.card_btn {
+  width: 235px;
+}
+.card_img{
+  max-width: 265px;
+  height: 240px;
+
+}
+.card_item_title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.card_item_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 27px;
+
+}
+
+.card_btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #CA0200;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 21.5px;
+  padding: 9px 0;
+  margin: 0 auto;
+  margin-left: 15px;
+  text-align: center;
+  cursor: pointer;
+}

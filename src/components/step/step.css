@@ -1,0 +1,45 @@
+.step_title {
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 115%;
+  color: #000000;
+  max-width: 639px;
+}
+.step_text{
+  font-weight: 500;
+font-size: 20px;
+line-height: 115%;
+color: #000000;
+max-width: 473px;
+margin-bottom: 36px;
+
+}
+.step_img{
+  margin: 30px 0;
+}
+.step_btn{
+  font-weight: 600;
+font-size: 34px;
+line-height: 115%;
+color: #FFFFFF;
+background: #CA0200;
+box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
+border-radius: 34.5px;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 60px;
+padding-right: 40px;
+border: none;
+cursor: pointer;
+}
+.step{
+  background-image: url("../../img/Group28.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 80px 0;
+}
+
+.step_section{
+  margin-top: 180px;
+}

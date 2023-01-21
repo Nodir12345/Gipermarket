@@ -1,0 +1,22 @@
+.own_title{
+  font-weight: 700;
+font-size: 100px;
+line-height: 105.5%;
+color: #000000;
+max-width: 600px;
+}
+.own_text{
+  font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+max-width: 513px;
+color: rgba(0, 0, 0, 0.71);
+margin-top: 21px;
+margin-bottom: 50px;
+}
+.own{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 140px;
+}
