@@ -1,0 +1,17 @@
+.df{
+  display: flex;
+}
+.imgs{
+  width: 450px;
+  height: 250px;
+  
+}
+img:hover{
+
+  transform: scale(1.05);
+  transition: 0.5s;
+
+}
+.h3{
+  text-align: center;
+}

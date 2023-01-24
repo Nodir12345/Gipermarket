@@ -1,0 +1,36 @@
+.shop{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.img{
+  width: 220px;
+  height: 120px;
+}
+.shop_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 4px 4px 18px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 4px 18px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 4px 4px 18px 0px rgba(34, 60, 80, 0.2);
+}
+.counter{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.add,.remove{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.xx{
+  background-color: red;
+  border: none;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+ cursor: pointer;
+}

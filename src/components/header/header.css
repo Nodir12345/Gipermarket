@@ -48,6 +48,7 @@ padding-bottom: 37px;
   display: flex;
   align-items: center;
   gap: 25px;
+  position: relative;
 }
 .header_logo{
 font-weight: 700;
@@ -62,4 +63,15 @@ width: 120px;
   line-height: 26px;
   color: #000000;
   }
+ .header_btn{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: -7px;
+  left: 50px;
+ }
  
