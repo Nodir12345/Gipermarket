@@ -3,6 +3,8 @@ import "./shop.css"
 export const Shop = ({ thumbnail, price, title, id }) => {
   const [value, setvalue] = React.useState(0)
   const [item, setitem] = React.useState(true)
+
+
   let data = JSON.parse(localStorage.getItem("korzinka"))
   const change = () => {
 
@@ -19,30 +21,29 @@ export const Shop = ({ thumbnail, price, title, id }) => {
       }
       setitem(() => localStorage.setItem('item', JSON.stringify(arr) || []))
     }
-
-
   }
+
+
   console.log(item);
   console.log("salom");
   return (
     <div className='container shop'>
       {item ? <div>
-        <ul>
+        <ul className='box_rr'>
           <li className='shop_item'>
-          <button className='xx' onClick={(() => change())}>X</button>
+            <button className='xx' onClick={(() => change())}>X</button>
             <img className='img' src={thumbnail} alt="" />
-            <p>{title>15? title : title.slice(0,15)}</p>
+            <p>{title > 15 ? title : title.slice(0, 15)}</p>
             <p>${price}</p>
             <div className='counter'>
-            <button className='remove' onClick={() => setvalue(value>0 ? value - 1 : 0)}>-</button>
-            <p>{value}</p>
-            <button className='add' onClick={() => setvalue(value + 1)}>+</button>
+              <button className='remove' onClick={() => setvalue(value > 0 ? value - 1 : 0)}>-</button>
+              <p>{value}</p>
+              <button className='add' onClick={() => setvalue(value + 1 )}>+</button>
             </div>
             <p>${(value * price).toFixed(2)}</p>
-            
           </li>
         </ul>
-      </div> :""}
+      </div> : ""}
     </div>
   )
 }

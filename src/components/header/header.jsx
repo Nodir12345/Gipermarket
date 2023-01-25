@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 import './header.css'
 
 
-export const Header=({children}) =>{
+export const Header=({children, a} ) =>{
   return ( <>
   <header>
     <div className="container">
       <div className="header">
-      <a className='header_logo' href="http://localhost:3000/">Rapture Athletics</a>
+      <Link to="/" className='header_logo'><img className='header_img_logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Facebook_Home_logo.svg/1024px-Facebook_Home_logo.svg.png" alt="j" /></Link>
         <ul className='header_block'>
-        <li className='header_item'>Men</li>
+        <Link to={`/category/${a.id}`} className='header_item'>Men</Link>
         <li className='header_item'>Women</li>
         <li className='header_item'>Kids</li>
         <li className='header_item'>Customize</li>
@@ -27,7 +27,9 @@ export const Header=({children}) =>{
           <img className='header_img' src={korzinka} alt="k" />
           </Link>
           
-          <img className='header_img' src={kontact} alt="k" />
+         <Link to="messege">
+         <img className='header_img' src={kontact} alt="k" />
+         </Link> 
         </div>
       </div>
     </div>

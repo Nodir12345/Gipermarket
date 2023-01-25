@@ -1,0 +1,18 @@
+.box_c{
+  margin-top: 180px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.contact_img{
+  width: 400px;
+  height: 400px;
+}
+.contact_box{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contact_text{
+  font-size: 20px;
+}

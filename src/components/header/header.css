@@ -32,6 +32,10 @@ header{
   box-shadow: 2px 12px 88px 0px rgba(34, 60, 80, 0.2);
   background-color: #fff;
 }
+.header_img_logo{
+  width: 100px;
+  height: 80px;
+}
 .header{
   display: flex;
   align-items: center;
@@ -75,3 +79,8 @@ width: 120px;
   left: 50px;
  }
  
+ @media  (max-width: 750px) {
+.header_block{
+  display: none;
+}
+ }

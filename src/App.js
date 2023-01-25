@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Header } from "./components/header/header";
-import { Step } from "./components/step/step";
 import { Own } from "./components/own/own";
 import { Card } from "./components/card/card";
 import { Child } from "./components/card_child/child";
@@ -9,6 +8,9 @@ import { Footer } from "./components/footer/footer";
 import { Shop } from "./pages/shop/shop";
 import { Contact } from "./pages/contact/contact";
 import { Carusel1 } from "./components/carusel/carusel";
+import { Slider } from "./components/slider/slider";
+import { Category } from "./pages/category/category";
+import { Masege } from "./pages/massege/Masege";
 import axios from "axios";
 let URL = "https://dummyjson.com/products"
 function App() {
@@ -43,12 +45,15 @@ function App() {
   
   return (
     <>
-      <Header>{use}</Header>
+    
+ <Header a ={item.map(el=>el)}>{use}</Header>
+    
+
 
       <Routes>
         <Route path="/" element={
           <div>
-            <Step></Step>
+           <Slider></Slider>
             <Own></Own>
             <Carusel1></Carusel1>
             <Card>
@@ -63,9 +68,9 @@ function App() {
         </Route>
         <Route path="/shop" element={local?.map(el => <Shop key={el.id} {...el}></Shop>)}></Route>
         <Route path="/contact/:id" element={<Contact ></Contact>}></Route>
-
+        <Route path="/category/:id" element={<Category></Category>}></Route>
+        <Route path="/messege" element={<Masege></Masege>}></Route>
       </Routes>
-
       <Footer></Footer>
     </>
 

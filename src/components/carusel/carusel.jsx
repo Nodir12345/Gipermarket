@@ -36,7 +36,7 @@ const [img91,img92,img93,img94,img95,img96,img97,img98,img99,img190,img191,img19
 
   return (
     <div className='container'>
-    <Carousel autoPlay   responsive={responsive}>
+    <Carousel autoPlay autoPlaySpeed={1500}  responsive={responsive}>
     <div>
     <img className='imgs' src={img1} alt="img" />   
      <h3>{img91}</h3>

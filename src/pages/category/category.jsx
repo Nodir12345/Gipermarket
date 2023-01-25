@@ -1,11 +1,11 @@
 import axios from 'axios'
 import React from 'react'
-import "./contact.css"
 import { useParams } from 'react-router-dom'
-export const Contact = () => {
+export const Category = () => {
   const [value,setvalue]= React.useState({})
   const param = useParams()
 
+  console.log(param);
 React.useEffect(()=>{
   axios.get(`https://dummyjson.com/products/${param.id}`).then(res=>{
     setvalue(res.data)

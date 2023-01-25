@@ -13,8 +13,6 @@ export const Child=({thumbnail,description ,title,id,setdata})=> {
 
     <button onClick={()=>setdata(id) }  className="card_btn">🛒</button>
     <Link to={`/contact/${id}`}>
-
-    
     <button id={id}className="card_btn more">✉️</button>
     </Link>
     </div>
